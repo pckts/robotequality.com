@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             blinkChar.innerText = lastChar.textContent;
             lastChar.replaceWith(blinkChar);
             blinkChar.style.setProperty('--blink-speed', blinkSpeed + 'ms');
+            lastChar.classList.add('no-blink');
         }
     }
 
