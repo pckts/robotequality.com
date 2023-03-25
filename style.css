@@ -13,22 +13,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f5f5f5;
-    color: #171717;
 }
 
 h1 {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 7vw;
+    transition: color 0.5s ease;
+}
+
+/* Light mode */
+body:not(.dark-mode) {
+    background-color: #f5f5f5;
     color: #171717;
 }
 
+/* Dark mode */
 body.dark-mode {
-    background-color: #171717;
-    color: #f5f5f5;
-}
-
-.container.dark-mode {
     background-color: #171717;
     color: #f5f5f5;
 }
