@@ -22,8 +22,20 @@ document.addEventListener('DOMContentLoaded', function() {
     type();
   
     // Detect whether device is in dark or light mode
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        // Apply dark mode styles
-        document.body.classList.add('dark-mode');
+    var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+  
+    // Update styles based on device mode
+    function updateColorScheme() {
+        if (prefersDarkMode.matches) {
+            document.body.classList.add('dark-mode');
+        } else {
+            document.body.classList.remove('dark-mode');
+        }
     }
+  
+    // Listen for changes in device mode and update styles accordingly
+    prefersDarkMode.addEventListener('change', function() {
+        updateColorScheme();
+    });
+    updateColorScheme();
 });
