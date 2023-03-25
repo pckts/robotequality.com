@@ -1,7 +1,7 @@
 // Wait for DOM to load before starting the animation
 document.addEventListener('DOMContentLoaded', function() {
     var h1 = document.querySelector('h1');
-    var text = 'ROBOTS ARE FRIENDS.';
+    var text = 'ROBOTS ARE FRIENDS';
     h1.innerText = '';
     var index = 0;
     var speed = 50; // milliseconds per character
