@@ -21,15 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
             var lastChar = h1.lastChild;
             var blinkChar = document.createElement('span');
             blinkChar.classList.add('blink');
-            blinkChar.innerText = lastChar.textContent;
-            lastChar.replaceWith(blinkChar);
+            blinkChar.innerText = '.';
+            lastChar.insertAdjacentElement('afterend', blinkChar);
             blinkChar.style.setProperty('--blink-speed', blinkSpeed + 'ms');
-            if (lastChar.nodeType === Node.TEXT_NODE) {
-                lastChar = lastChar.previousSibling;
-            }
-            if (lastChar) {
-                lastChar.classList.add('no-blink');
-            }
         }
     }
 
