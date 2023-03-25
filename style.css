@@ -52,3 +52,9 @@ body {
 .blink {
   animation: blink var(--blink-speed, 1s) infinite;
 }
+
+h1 .no-blink {
+    display: inline-block;
+    width: 1ch;
+    visibility: hidden;
+}
