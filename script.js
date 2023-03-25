@@ -22,8 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
             var blinkChar = document.createElement('span');
             blinkChar.classList.add('blink');
             blinkChar.innerText = '.';
-            lastChar.insertAdjacentElement('afterend', blinkChar);
+            h1.appendChild(blinkChar);
             blinkChar.style.setProperty('--blink-speed', blinkSpeed + 'ms');
+            lastChar.classList.add('no-blink');
         }
     }
 
