@@ -2,7 +2,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     var h1 = document.querySelector('#headline');
     var text = 'ROBOTS ARE FRIENDS';
-    h1.innerText = text;
     var index = 0;
     var speed = 50; // milliseconds per character
     var blinkSpeed = 1000; // milliseconds per blink
