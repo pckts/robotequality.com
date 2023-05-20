@@ -1,7 +1,7 @@
 // Wait for DOM to load before starting the animation
 document.addEventListener('DOMContentLoaded', function() {
     var h1 = document.querySelector('#headline');
-    var text = 'The Robot Equality Initiative';
+    var text = 'Robots are Friends';
     var index = 0;
     var speed = 50; // milliseconds per character
     var blinkSpeed = 1000; // milliseconds per blink
