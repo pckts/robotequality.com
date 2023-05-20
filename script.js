@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
             blinkChar.innerText = '.';
             h1.appendChild(blinkChar);
             blinkChar.style.setProperty('--blink-speed', blinkSpeed + 'ms');
-            lastChar.classList.add('no-blink');
         }
     }
 
